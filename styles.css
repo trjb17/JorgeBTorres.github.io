@@ -79,12 +79,12 @@
   --bs-highlight-bg: #fff3cd;
 }
 
-/* Add the matrix_code.gif as the background of the masthead */
 .masthead {
-    background: url('Porfolio/assets/img/matrix_code.gif') no-repeat center center fixed; 
-    background-size: cover; /* Ensure the background covers the entire section */
-    height: 100vh; /* Ensure it takes up the full viewport height */
+    background: url('https://trjb17.github.io/JorgeBTorres.github.io/Porfolio/assets/img/matrix_code.gif') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
 }
+
 
 
 *,
