@@ -79,6 +79,14 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+.masthead {
+    background: url('https://trjb17.github.io/JorgeBTorres.github.io/Porfolio/assets/img/matrix_code.gif') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
 *,
 *::before,
 *::after {
