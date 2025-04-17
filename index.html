@@ -303,11 +303,29 @@ function gtag_report_conversion(url) {
         <section class="page-section bg-dark text-white">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">Follow me on Instagram and get a discount on your next event!</h2>
-<a href="https://www.instagram.com/jor____g/" 
-   target="_blank" 
-   onclick="return gtag_report_conversion('https://www.instagram.com/jor____g/');">
+<!-- Book Now button with conversion tracking -->
+<a href="https://www.instagram.com/jor____g/"
+   target="_blank"
+   onclick="gtag_report_conversion('https://www.instagram.com/jor____g/'); return true;">
    Book Now!
 </a>
+
+<!-- Google Ads conversion tracking script -->
+<script>
+function gtag_report_conversion(url) {
+  gtag('event', 'conversion', {
+    'send_to': 'AW-16997355414/M9ZkCM-khbcaEJaf_Kg_',
+    'value': 1.0,
+    'currency': 'USD',
+    'event_callback': function () {
+      if (url) {
+        window.location.href = url;
+      }
+    }
+  });
+}
+</script>
+
 
             </div>
         </section>
