@@ -17,14 +17,21 @@ function gtag_report_conversion(url) {
       'value': 1.0,
       'currency': 'USD',
       'event_callback': function () {
-        if (url) window.location.href = url;
+        if (url) {
+          window.location.href = url;
+        }
       }
     });
-  } else if (url) {
-    window.location.href = url;
+    return false;
+  } else {
+    if (url) {
+      window.location.href = url;
+    }
+    return true;
   }
 }
 </script>
+
 
 
         <meta charset="utf-8" />
@@ -123,7 +130,7 @@ function gtag_report_conversion(url) {
                         <h6 class="text-white-75 font-weight-bold">Chicago born and raised, moved to Austin, Texas, went to Austin Community College to study Radio TV Film, and transferred to Texas State to study Digital Media Innovation. Study Data Analytics and Visualization at the University of Texas at Austin. <br>
                             Outside of academics and work, I’m a huge fan of soccer, basketball, UFC, Catan, billiards, and exploring Austin’s thriving food scene. Whether it’s trying new dishes at local restaurants or engaging in friendly competition with friends, I love staying active and connected to my community. <br>
                             Entrepreneurship is also a big part of my journey. I launched Texas Zbot LED Robot, a business that brings an innovative twist to events with LED robot entertainment for Birthdays, Quinceañeras, Weddings, Graduations, and Festivals. The response has been overwhelmingly positive, and bookings are now open for those looking to make their events truly unforgettable! <br>
-                            With a unique blend of technical skills, creativity, and entrepreneurial spirit, I’m always seeking new challenges and opportunities to grow. Let’s connect!
+                            With a unique blend of technical skills, creativity, and entrepreneurial spirit, I always seek new challenges and growth opportunities. Let’s connect!
                         </h6>
                         <a class="btn btn-light btn-xl" href="#services">Ask for my services</a>
                     </div>
