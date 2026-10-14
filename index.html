@@ -26,26 +26,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   gtag('config', 'AW-16997355414');
 </script>
+
 <script>
 function gtag_report_conversion(url) {
-  if (typeof gtag !== "undefined") {
-    gtag('event', 'conversion', {
-      'send_to': 'AW-16997355414/M9ZkCM-khbcaEJaf_Kg_',
-      'value': 1.0,
-      'currency': 'USD',
-      'event_callback': function () {
-        if (url) {
-          window.location.href = url;
-        }
-      }
-    });
-    return false;
-  } else {
-    if (url) {
-      window.location.href = url;
-    }
-    return true;
-  }
+  gtag('event', 'conversion', {
+    'send_to': 'AW-16997355414/M9ZkCM-khbcaEJaf_Kg_',
+    'value': 1.0,
+    'currency': 'USD'
+  });
+
+  return true;
 }
 </script>
 
@@ -190,9 +180,7 @@ function gtag_report_conversion(url) {
 <a href="https://trjb17.github.io/Github-Portfolio/"
    target="_blank"
    rel="noopener noreferrer"
-   onclick="gtag_report_conversion('https://trjb17.github.io/Github-Portfolio/');">
-   View My Portfolio
-</a>
+   onclick="gtag_report_conversion('https://trjb17.github.io/Github-Portfolio/');"></a>
                                 <i class="bi bi-github fs-1 text-primary"></i></a></div>
                                 
                             <h3 class="h4 mb-2">GitHub</h3>
@@ -207,13 +195,12 @@ function gtag_report_conversion(url) {
    target="_blank"
    rel="noopener noreferrer"
    onclick="gtag_report_conversion('https://www.google.com/search?q=texas+zbot+led+robot');">
-
-    <i class="bi-laptop fs-1 text-primary"></i>
-
+<i class="bi-laptop fs-1 text-primary"></i>
 </a>
 
 <div></div>
-<h3 class="h4 mb-2">Marketing</h3>                            <p class="text-muted mb-0">Social Media</p>
+<h3 class="h4 mb-2">Marketing</h3>                            
+                            <p class="text-muted mb-0">Social Media</p>
                     </div>
                     
                     </div>
@@ -352,18 +339,16 @@ function gtag_report_conversion(url) {
 </a>
 
 <!-- Google Ads conversion tracking script -->
+
 <script>
 function gtag_report_conversion(url) {
   gtag('event', 'conversion', {
     'send_to': 'AW-16997355414/M9ZkCM-khbcaEJaf_Kg_',
     'value': 1.0,
-    'currency': 'USD',
-    'event_callback': function () {
-      if (url) {
-        window.location.href = url;
-      }
-    }
+    'currency': 'USD'
   });
+
+  return true;
 }
 </script>
 
